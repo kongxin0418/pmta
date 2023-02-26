@@ -1525,9 +1525,9 @@ http-redirect-to-https false
 # BEGIN: USERS/VIRTUAL-MTA / VIRTUAL-MTA-POOL / VIRTUAL-PMTA-PATTERN
 ############################################################################
 
-<smtp-user account-japan@QQQhostnameQQQ>
-password admin667788
-source pmta-pool
+<smtp-user admin>           # 认证用户名
+    password admin667788      # 认证密码
+    source smtpuser-auth
 </smtp-user>
 
 <source pmta-pool>
